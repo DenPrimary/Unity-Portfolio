@@ -16,7 +16,9 @@ Classic Pong game built from scratch in Unity.
 - Polymorphic hierarchy
 - Progression sys: XP, levels, upgrades
 - Singleton managers
-- Built with Unity 6000.5.2f1, DOTween
+- LINQ, filtering and sorting
+- DOTween animations
+- Built with Unity 6000.5.2f1
 - **[View project →](./ASTRAWARS)**
 
 ### Udemy Course Projects (recovery in progress)

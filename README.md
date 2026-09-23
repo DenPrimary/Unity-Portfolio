@@ -1,7 +1,7 @@
 # Unity Portfolio — Denis Zabiiakin
 
-C# programmer with 3.5+ years of teaching Unity and Roblox to kids and teenagers.  
-This portfolio showcases my Unity projects.
+C# programming. 3.5+ years of teaching Unity and Roblox to kids and teenagers.  
+Portfolio for showcases and Unity projects.
 
 ## Projects
 

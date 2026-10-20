@@ -25,6 +25,7 @@ Classic Pong game built from scratch in Unity.
 - Addressables
 - UniTask
 - Zenject
+- **[View project →](./TowerDef (Showcase))**
 
 ### Udemy Course Projects (recovery in progress)
 Restoring projects from "Complete C# Unity Game Developer 3D" (GameDev.tv / Udemy, winter 2023).

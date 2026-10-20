@@ -27,7 +27,8 @@ Classic Pong game built from scratch in Unity.
 ### [TowerDef (Showcase)](./TowerDef (Showcase))
 - Addressables
 - UniTask
-- Zenject
+- Zenject, Applied Dependency Injection
+- SOLID principles to decouple systems and improve testability
 - **[View project →](./TowerDef (Showcase))**
 
 ### Udemy Course Projects (recovery in progress)

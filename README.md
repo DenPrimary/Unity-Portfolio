@@ -25,8 +25,8 @@ Classic Pong game built from scratch in Unity.
 - **[View project →](./ASTRAWARS)**
 
 ### [TowerDef (Showcase)](./TowerDef (Showcase))
-- Addressables
-- UniTask
+- Addressables (Assets managment)
+- UniTask (async)
 - Zenject, Applied Dependency Injection
 - SOLID principles to decouple systems and improve testability
 - **[View project →](./TowerDef (Showcase))**

@@ -1,6 +1,6 @@
 # Unity Portfolio — Denis Zabiiakin
 
-C# programming. 3.5+ years of teaching Unity and Roblox to kids and teenagers.  
+C# programming. 3+ years of teaching Unity and Roblox to kids and teenagers.  
 Portfolio for showcases and Unity projects.
 
 ## Projects
@@ -21,11 +21,13 @@ Classic Pong game built from scratch in Unity.
 - Built with Unity 6000.5.2f1
 - **[View project →](./ASTRAWARS)**
 
+### TowerDefence (Showcase)
+- Addressables
+- UniTask
+- Zenject
+
 ### Udemy Course Projects (recovery in progress)
 Restoring projects from "Complete C# Unity Game Developer 3D" (GameDev.tv / Udemy, winter 2023).
-
-### Sandbox (coming soon)
-Experiments and small mechanics.
 
 ---
 

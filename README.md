@@ -7,7 +7,10 @@ Portfolio for showcases and Unity projects.
 
 ### [2D Pong](./Pong)
 Classic Pong game built from scratch in Unity.
-- Ball physics, AI opponent, score system, UI menu
+- Ball physics
+- AI opponent
+- Score system
+- UI menu
 - **[View project →](./Pong)**
 
 ### [ASTRAWARS](./ASTRAWARS)

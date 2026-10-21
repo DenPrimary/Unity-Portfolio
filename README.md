@@ -31,7 +31,7 @@ Classic Pong game built from scratch in Unity.
 - SOLID principles to decouple systems and improve testability
 - **[View project →](./TowerDef (Showcase))**
 
-### Udemy Course Projects (recovery in progress)
+### Udemy Course Project 3D 1st person Shooter (recovery in progress)
 Restoring projects from "Complete C# Unity Game Developer 3D" (GameDev.tv / Udemy, winter 2023).
 
 ---

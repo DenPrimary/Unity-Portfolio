@@ -15,13 +15,14 @@ Classic Pong game built from scratch in Unity.
 
 ### [ASTRAWARS](./ASTRAWARS)
 3D top-down shooter. Upgrade your ship, survive as long as you can.
-- Object pooling
-- Polymorphic hierarchy
-- Progression sys: XP, levels, upgrades
-- Singleton managers
-- LINQ, filtering and sorting
-- DOTween animations
-- Built with Unity 6000.5.2f1
+- **Object pooling** (ObjectPool<T>) for bullets and asteroids — eliminates GC allocations and micro-stutters in endless mode
+- **Polymorphic asteroid hierarchy** (Asteroid base class) — replaces type checks with virtual methods, so new asteroid types don't require changing existing code
+- **Progression system** (XP, levels, upgrades) — split into PlayerProgress (data), ExpCalc (formulas), LvlUpManager (logic) for single responsibility
+- **Singleton managers** (ProgressionManager, BulletPool, HighlightManager) — single point of access for global systems
+- **System.Action events** for UI — updates only when stats change, no per-frame polling
+- **LINQ** in AsteroidPath — declarative filtering and sorting of asteroids by distance to player
+- **DOTween** animations with DOKill on pool return — prevents tween accumulation and conflicts
+- Built with Unity 6000.5.2f1 (URP)
 - **[View project →](./ASTRAWARS)**
 
 ### [TowerDef (Showcase)](./TowerDef (Showcase))

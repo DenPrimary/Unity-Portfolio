@@ -26,10 +26,14 @@ Classic Pong game built from scratch in Unity.
 - **[View project →](./ASTRAWARS)**
 
 ### [TowerDef (Showcase)](./TowerDef (Showcase))
-- Addressables (Assets managment)
-- UniTask (async)
-- Zenject, Applied Dependency Injection
-- SOLID principles to decouple systems and improve testability
+- Single CancellationToken from IGameState — enemies, towers and WaveManager link via CreateLinkedTokenSource; game over cancels all async loops at once
+- Interfaces (IEnemyRegistry, IEnemyFactory, IGameState) — systems never reference each other concretely, testable in isolation
+- Zenject DI — constructor injection for plain classes, field injection for MonoBehaviour; no global state
+- Addressables (InstantiateAsync + InjectGameObject) — async spawning: instantiate, inject, initialize; assets load on demand
+- UniTask over coroutines — cancellable, allocation-free; async loops live exactly as long as the object
+- SOLID in practice — EnemyRegistry stores, EnemyFactory creates, GameState owns lives and token, WaveManager spawns waves
+- LINQ-free hot path — manual foreach with one Vector3.Distance per enemy in the firing loop, zero allocations
+- Built with Unity 6000.5.2f1, URP
 - **[View project →](./TowerDef (Showcase))**
 
 ### Udemy Course Project 3D 1st person Shooter (recovery in progress)

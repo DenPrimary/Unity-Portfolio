@@ -7,10 +7,15 @@ Portfolio for showcases and Unity projects.
 
 ### [2D Pong](./Pong)
 Classic Pong game built from scratch in Unity.
-- Ball physics
-- AI opponent
-- Score system
-- UI menu
+- **Event-driven scoring** (static ScoreManager events: OnScoreChanged, OnPlayerScoredEvent, OnEnemyScoredEvent) — UI subscribes without referencing game logic; updates only on change, no per-frame polling
+- **Separation of concerns** — BallController (input/physics), BallAccelerator (speed state), AIController (movement), GameManager (flow), GameTimeManager (pause) — each owns one responsibility
+- **Ball acceleration** (BallAccelerator) — speed state separated from Rigidbody2D; velocity normalized after every boost (paddle +0.75, wall +0.25) with hard cap, prevents trajectory drift
+- **Anti-stuck physics guard** — minimum |velocity.x| enforced each FixedUpdate, prevents near-vertical ball loops without breaking legitimate angles
+- **Coroutine sequencing with re-entry guard** — goal → popup → paddle Lerp reset → pause → ball reset, all gated by isProcessingGoal to prevent overlapping routines
+- **Dual-time pause model** (GameTimeManager) — Time.timeScale freezes physics, realtimeSinceStartup drives pause duration, animations run on unscaledDeltaTime
+- **"Draw" mechanic** (DrawZoneController) — Vector2.Angle detects horizontal state, counts consecutive paddle hits, declares draw at threshold
+- **Self-playing demo mode** (DemoGameManager) — AI vs AI match in the main menu reusing the same BallController; goal routing branches by manager
+- Built with Unity 2022.3 LTS (2D)
 - **[View project →](./Pong)**
 
 ### [ASTRAWARS](./ASTRAWARS)

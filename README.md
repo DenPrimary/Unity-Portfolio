@@ -5,6 +5,19 @@ Portfolio for showcases and Unity projects.
 
 ## Projects
 
+PenaltyDuel
+
+- 3D football penalty game. Choose a target zone, control shot power and timing, score goals and outsmart an adaptive goalkeeper.
+- Adaptive goalkeeper AI — analyzes the last 5 shots using a ring buffer and recency-weighted probabilities; adapts its decisions to the player's shooting patterns
+- Weighted probability model — recency weights (1.0, 0.7, 0.5, 0.35, 0.25), Perfect Zone priority bonus (×1.5) and Laplace smoothing (α=1) for goalkeeper decision-making
+- Shot mechanics — 9 target zones, charge-based shot power and timing; player Accuracy and Composure attributes (50–100) influence shot execution
+- Scoring and progression — Perfect Zone goals award 300 points, regular goals 100; 5-shot sessions with 1–3 star rating based on final score
+- Perfect Zone system — randomly selects a target zone for each session, rewarding players for accurate shots
+- Server-authoritative gameplay — Unity Netcode RPC-based shot submission and server-side game logic
+- Physics-driven ball movement — shot execution and goal detection integrated with the ball's movement
+- Built with Unity 6, Netcode for GameObjects
+- **[View project →](./PenaltyDuel)**
+
 ### [2D Pong](./Pong)
 Classic Pong game built from scratch in Unity.
 - **Event-driven scoring** (static ScoreManager events: OnScoreChanged, OnPlayerScoredEvent, OnEnemyScoredEvent) — UI subscribes without referencing game logic; updates only on change, no per-frame polling
